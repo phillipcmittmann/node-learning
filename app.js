@@ -1,27 +1,12 @@
-function soma(a, b) {
-    return a + b;
-}
+var calculadora = require("./calculadora");
 
-function mult(a, b) {
-    return a * b;
-}
+console.log(calculadora.soma(10, 20));
+console.log(calculadora.mult(10, 10));
+console.log(calculadora.nome);
 
-function sub(a, b) {
-    return a - b;
-}
+calculadora.nome = "Alterando nome exportado do modulo";
 
-function div(a, b) {
-    return a / b;
-}
-
-console.log(soma(10, 20));
-
-var resultadoMult = mult(10, 10);
-var resultadoSub = sub(20, 40);
-
-console.log(resultadoMult);
-console.log(resultadoSub);
-
+console.log(calculadora.nome);
 
 /*
 var mostrarSite = false;
